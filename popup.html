@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>AES 加密解密工具</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>AES 加密解密工具</h2>
+
+  <!-- 顶部一行：加密解密 + 文本文件 -->
+  <div class="row">
+    <div>
+      <label><input type="radio" name="mode" id="encryptRadio" checked> 加密</label>
+      <label><input type="radio" name="mode" id="decryptRadio"> 解密</label>
+    </div>
+    <div>
+      <label><input type="radio" name="inputType" id="textRadio" checked> 文本</label>
+      <label><input type="radio" name="inputType" id="fileRadio"> 文件</label>
+    </div>
+  </div>
+
+  <!-- 文本输入 -->
+  <div id="textRow" class="section">
+    <textarea id="inputText" placeholder="在此输入文本或 Base64 编码内容"></textarea>
+  </div>
+
+  <!-- 文件选择和文件内容预览 -->
+  <div id="fileRow" class="section" style="display:none;">
+    <input type="file" id="fileInput">
+    <span id="fileStatus" class="muted">未选择文件</span>
+    <textarea id="filePreview" readonly placeholder="文件内容将在此显示"></textarea>
+  </div>
+
+  <!-- 密码 + 执行按钮 -->
+  <div class="password-row section">
+    <input type="password" id="password" placeholder="请输入密码" value="123456">
+    <label><input type="checkbox" id="showPassword"> 显示密码</label>
+    <button id="runBtn" class="btn">执行</button>
+    <button id="clearBtn" class="btn">清空</button>
+  </div>
+
+  <!-- 输出 -->
+  <div class="section">
+    <textarea id="outputText" readonly placeholder="结果将在此显示"></textarea>
+  </div>
+
+  <div class="section">
+    <button id="copyBtn" class="btn">复制结果</button>
+    <a id="downloadLink" style="display:none;">下载结果</a>
+  </div>
+
+  <script src="crypto.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

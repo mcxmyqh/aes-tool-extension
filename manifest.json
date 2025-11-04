@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AES 加密解密工具",
+  "version": "1.0.0",
+  "description": "本地AES-256-CBC加密解密工具，支持文本与文件",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

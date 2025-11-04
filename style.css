@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  width: 420px;
+  padding: 12px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 6px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row label {
+  margin-right: 10px;
+}
+
+.section {
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: gray;
+}
+
+.error {
+  color: red;
+}
+
+input[type="password"],
+input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.password-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0078d7;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+#runBtn {
+  background-color: #28a745;
+}
+
+#runBtn:hover {
+  background-color: #218838;
+}
+
+#clearBtn {
+  background-color: #dc3545;
+}
+
+#clearBtn:hover {
+  background-color: #c82333;
+}
